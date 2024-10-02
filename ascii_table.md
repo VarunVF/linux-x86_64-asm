@@ -6,7 +6,7 @@
 ## ASCII control characters (character code 0-31)
 The first 32 characters in the ASCII-table are unprintable control codes and are used to control peripherals such as printers.
 
-| DEC | OCT | HEX | BIN      | Symbol | HTML  | Number | Description |
+| DEC | OCT | HEX | BIN      | Symbol | HTML  | HTML Name | Description |
 | --- | --- | --- | -------- | ------ | ----- | ------ | ----------- |
 | 0   | 000 | 00  | 00000000 | NUL    | `&#00;` |      - | Null character |
 | 1   | 001 | 01  | 00000001 | SOH    | `&#01;` |      - | Start of Heading |
@@ -45,7 +45,7 @@ The first 32 characters in the ASCII-table are unprintable control codes and are
 ## ASCII printable characters (character code 32-127)
 Codes 32-127 are common for all the different variations of the ASCII table, they are called printable characters, represent letters, digits, punctuation marks, and a few miscellaneous symbols. You will find almost every character on your keyboard. Character 127 represents the command DEL.
 
-| DEC | OCT | HEX | BIN      | Symbol | HTML     | Number | Description |
+| DEC | OCT | HEX | BIN      | Symbol | HTML     | HTML Name | Description |
 | --- | --- | --- | -------- | ------ | -------- | ------ | ----------- |
 | 32  | 040 | 20  | 00100000 | SP     | `&#32;`  | Space
 | 33  | 041 | 21  | 00100001 | !      | `&#33;`  | &excl;	    | Exclamation mark |
@@ -147,7 +147,7 @@ Codes 32-127 are common for all the different variations of the ASCII table, the
 
 ## The extended ASCII codes (character code 128-255)
 There are several different variations of the 8-bit ASCII table. The table below is according to Windows-1252 (CP-1252) which is a superset of ISO 8859-1, also called ISO Latin-1, in terms of printable characters, but differs from the IANA's ISO-8859-1 by using displayable characters rather than control characters in the 128 to 159 range. Characters that differ from ISO-8859-1 is marked by light blue color.
-| DEC | OCT | HEX | BIN      | Symbol | HTML     | Number | Description |
+| DEC | OCT | HEX | BIN      | Symbol | HTML     | HTML Name | Description |
 | --- | --- | --- | -------- | ------ | -------- | ------ | ----------- |
 | 128 | 200 | 80  | 10000000 | €      | `&#8364;`  | `&euro;`   |   Euro sign |
 | 129 | 201 | 81  | 10000001 |        |            |           |   Unused |
