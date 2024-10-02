@@ -22,7 +22,7 @@ Individual flags are part of a larger flags register.
 
 | Pointer Name | Meaning       | Description                             |
 | ------------ | ------------- | --------------------------------------- |
-| `rip`         | Index pointer | Points to the next address to be executed in the control flow. |
+| `rip`        | Index pointer | Points to the next address to be executed in the control flow. |
 | `rsp`         | Stack pointer | Points to the top address of the stack. |
 | `rbp`         | Base pointer  | Points to the bottom of the stack.      |
 
@@ -59,29 +59,29 @@ Comparisons (`cmp`) allow programs to take different paths based on conditions.
 Comparisons are performed on registers.
 Upon performing a comparison, certain flags are set.
 
-| `cmp a, b`                             |
-| -------- | --------------------------- |
-| `a == b` | ZF = 1 (zero flag is set)   |
-| `a != b` | ZF = 0 (zero flag is reset) |
-| (always) | SF = `msb(a - b)`           |
-| ...      | ...                         |
+| `cmp a, b` | Effect on flags             |
+| ---------- | --------------------------- |
+| `a == b`   | ZF = 1 (zero flag is set)   |
+| `a != b`   | ZF = 0 (zero flag is reset) |
+| (always)   | SF = `msb(a - b)`           |
+| ...        | ...                         |
 
 After a comparison is made, a conditional jump can be made, based on the status of the flags that were set.
 
-| jump symbol (signed) | jump symbol (unsigned) | Meaning                  |
-| -------------------- | -----------------------|------------------------- |
-| `je`                  | -                      | "jump equal"             |
-| `jne`                 | -                      | "jump not equal"         |
-| `jg`                  | `ja`                    | "jump greater than"      |
-| `jge`                 | `jae`                   | "jump greater or equal"  |
-| `jl`                  | `jb`                    | "jump less than"         |
-| `jle`                 | `jbe`                   | "jump less or equal"     |
-| `jz`                  | -                      | "jump zero"              |
-| `jnz`                 | -                      | "jump not zero"          |
-| `jo`                  | -                      | "jump if overflow occured" |
-| `jno`                 | -                      | "jump if overflow did not occur" |
-| `js`                  | -                      | "jump if signed"         |
-| `jns`                 | -                      | "jump if not signed"     |
+| jump symbol (signed) | jump symbol (unsigned) | Meaning                          |
+| -------------------- | -----------------------|--------------------------------- |
+| `je`                 | -                      | "jump equal"                     |
+| `jne`                | -                      | "jump not equal"                 |
+| `jg`                 | `ja`                   | "jump greater than"              |
+| `jge`                | `jae`                  | "jump greater or equal"          |
+| `jl`                 | `jb`                   | "jump less than"                 |
+| `jle`                | `jbe`                  | "jump less or equal"             |
+| `jz`                 | -                      | "jump zero"                      |
+| `jnz`                | -                      | "jump not zero"                  |
+| `jo`                 | -                      | "jump if overflow occured"       |
+| `jno`                | -                      | "jump if overflow did not occur" |
+| `js`                 | -                      | "jump if signed"                 |
+| `jns`                | -                      | "jump if not signed"             |
 
 
 Comparisons example:
