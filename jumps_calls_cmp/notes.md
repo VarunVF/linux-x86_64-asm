@@ -7,8 +7,8 @@ They are either true or false (corresponding to a set or unset bit).
 
 Individual flags are part of a larger flags register.
 
-| Flag Symbol | Description       |
-| ----------- | ----------------- |
+| Flag Symbol  | Description       |
+| ------------ | ----------------- |
 | `CF`         | Carry             |
 | `PF`         | Parity            |
 | `ZF`         | Zero              |
@@ -59,11 +59,11 @@ Comparisons (`cmp`) allow programs to take different paths based on conditions.
 Comparisons are performed on registers.
 Upon performing a comparison, certain flags are set.
 
-| `cmp a, b`                              |
+| `cmp a, b`                             |
 | -------- | --------------------------- |
-| `a == b`  | ZF = 1 (zero flag is set)   |
-| `a != b`  | ZF = 0 (zero flag is reset) |
-| (always) | SF = `msb(a - b)`             |
+| `a == b` | ZF = 1 (zero flag is set)   |
+| `a != b` | ZF = 0 (zero flag is reset) |
+| (always) | SF = `msb(a - b)`           |
 | ...      | ...                         |
 
 After a comparison is made, a conditional jump can be made, based on the status of the flags that were set.
