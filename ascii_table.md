@@ -47,7 +47,7 @@ Codes 32-127 are common for all the different variations of the ASCII table, the
 
 | DEC | OCT | HEX | BIN      | Symbol | HTML     | HTML Name | Description |
 | --- | --- | --- | -------- | ------ | -------- | ------ | ----------- |
-| 32  | 040 | 20  | 00100000 | SP     | `&#32;`  | Space
+| 32  | 040 | 20  | 00100000 | SP     | `&#32;`  |        | Space |
 | 33  | 041 | 21  | 00100001 | !      | `&#33;`  | &excl;	    | Exclamation mark |
 | 34  | 042 | 22  | 00100010 | "      | `&#34;`  | &quot;	    | Double quotes (or speech marks) |
 | 35  | 043 | 23  | 00100011 | #      | `&#35;`  | &num;	    | Number sign |
